@@ -1,35 +1,35 @@
 <template>
-    <div class="slds-var-p-horizontal_small">
-     <lightning-card title={profesional.Name} icon-name="standard:avatar">
-        <lightning-button 
-        label="View details" 
-        slot="actions" 
+  <div class="slds-var-p-horizontal_small">
+    <lightning-card title={profesional.Name} icon-name="standard:avatar">
+      <lightning-button
+        label="View details"
+        slot="actions"
         onclick={navigateToRecordViewPage}
-        ></lightning-button>
-        <p class="slds-var-p-horizontal_small">{profesional.Description__c}</p>
-        <div class="slds-align_absolute-center">
-            <img 
-            class="profesional slds-align_absolute-center slds-var-m-around_medium"
-            src={profesional.Image_URL__c} 
-            alt={profesional.Name}
-            />
-        </div>
-        <div class="slds-var-p-horizontal_small slds-align_absolute-center">
+      ></lightning-button>
+      <p class="slds-var-p-horizontal_small">{profesional.Description__c}</p>
+      <div class="slds-align_absolute-center">
+        <img
+          class="profesional slds-align_absolute-center slds-var-m-around_medium"
+          src={profesional.Image_URL__c}
+          alt={profesional.Name}
+        />
+      </div>
+      <div class="slds-var-p-horizontal_small slds-align_absolute-center">
         <template if:true={isAm}>
-            <lightning-icon 
+          <lightning-icon
             icon-name="custom:custom3"
-            alternative-text = "Am"
+            alternative-text="Am"
             title="Am"
-            ></lightning-icon>
+          ></lightning-icon>
         </template>
         <template if:true={isPm}>
-            <lightning-icon 
+          <lightning-icon
             icon-name="custom:custom10"
-            alternative-text = "Pm"
+            alternative-text="Pm"
             title="Pm"
-            ></lightning-icon>
+          ></lightning-icon>
         </template>
-        </div>
-     </lightning-card>
-    </div>
+      </div>
+    </lightning-card>
+  </div>
 </template>

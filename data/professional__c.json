@@ -1,17 +1,17 @@
 {
-    "records": [
-        {
-            "attributes": {
-                "type": "professional__c",
-                "referenceId": "professional__cRef1"
-            },
-            "Description__c": null,
-            "Image_URL__c": "https://www.cetefic.cl/wp-content/uploads/2022/09/eileen1.jpg",
-            "LastActivityDate": null,
-            "Name": "Eileen Escribá",
-            "Price__c": 30000,
-            "Specialty__c": "Terapia familiar",
-            "schedules__c": "Am"
-        }
-    ]
+  "records": [
+    {
+      "attributes": {
+        "type": "professional__c",
+        "referenceId": "professional__cRef1"
+      },
+      "Description__c": null,
+      "Image_URL__c": "https://www.cetefic.cl/wp-content/uploads/2022/09/eileen1.jpg",
+      "LastActivityDate": null,
+      "Name": "Eileen Escribá",
+      "Price__c": 30000,
+      "Specialty__c": "Terapia familiar",
+      "schedules__c": "Am"
+    }
+  ]
 }

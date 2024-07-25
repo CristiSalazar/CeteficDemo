@@ -1,16 +1,15 @@
 :host {
-    width: 325px;
-    display: block;
+  width: 325px;
+  display: block;
 }
 
-p.description{
-    min-height: 60px;
+p.description {
+  min-height: 60px;
 }
 
-img.profesional{
-    height: 200px;
-    max-width: 250px;
-    border-radius: 1.5rem;
-    border: 1px solid rgb(221, 219, 218);
+img.profesional {
+  height: 200px;
+  max-width: 250px;
+  border-radius: 1.5rem;
+  border: 1px solid rgb(221, 219, 218);
 }
-

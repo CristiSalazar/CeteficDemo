@@ -1,20 +1,23 @@
 <template>
-    <div class="slds-align_absolute-center">
-        <lightning-input type="text" label="Enter some text" onchange={handleInputChange}></lightning-input>
+  <div class="slds-align_absolute-center">
+    <lightning-input
+      type="text"
+      label="Enter some text"
+      onchange={handleInputChange}
+    ></lightning-input>
+  </div>
+  <div class="slds-align_absolute-center">
+    <div class="slds-grid slds-wrap slds-grid_align-spread grid">
+      <template if:true={profesionals.data}>
+        <template for:each={profesionals.data} for:item="prof">
+          <div key={prof.Name}>
+            <c-profesional-tile
+              profesional={prof}
+              class="slds-col slds-var-m-around_small"
+            ></c-profesional-tile>
+          </div>
+        </template>
+      </template>
     </div>
-    <div class="slds-align_absolute-center">
-        <div class = "slds-grid slds-wrap slds-grid_align-spread grid">
-            <template if:true = {profesionals.data}>
-                <template for:each={profesionals.data} for:item="prof">
-                    <div key={prof.Name}>
-                     <c-profesional-tile 
-                     profesional = {prof}
-                     class = "slds-col slds-var-m-around_small"
-                     ></c-profesional-tile>
-                    </div>
-                </template>
-            </template>
-        </div>
-    </div>
-    
+  </div>
 </template>

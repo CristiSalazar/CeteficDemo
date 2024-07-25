@@ -1,3 +1,2 @@
-public with sharing class MyException extends Exception{
-
+public with sharing class MyException extends Exception {
 }

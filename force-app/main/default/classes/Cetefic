@@ -1,0 +1,2 @@
+SELECT Description__c, I__c, Image_URL__c, LastActivityDate, Name, OwnerId, Price__c, Specialty__c, schedules__c
+  FROM professional__c

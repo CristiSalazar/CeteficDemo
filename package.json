@@ -19,7 +19,6 @@
     "@lwc/eslint-plugin-lwc": "^1.1.2",
     "@prettier/plugin-xml": "^3.2.2",
     "@salesforce/eslint-config-lwc": "^3.2.3",
-    "@salesforce/eslint-plugin-aura": "^2.1.0",
     "@salesforce/eslint-plugin-lightning": "^1.0.0",
     "@salesforce/sfdx-lwc-jest": "^3.1.2",
     "eslint": "^8.11.0",
@@ -34,7 +33,7 @@
     "**/*.{cls,cmp,component,css,html,js,json,md,page,trigger,xml,yaml,yml}": [
       "prettier --write"
     ],
-    "**/{aura, lwc}/**/*.js": [
+    "**/{lwc}/**/*.js": [
       "eslint"
     ]
   }
